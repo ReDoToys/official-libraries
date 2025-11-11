@@ -1,0 +1,4 @@
+{
+  "label": "Distancer",
+  "code": "let hex = new Sketch([10,0]).LineTo([5,8.66]).LineTo([-5,8.66]).LineTo([-10,0]).LineTo([-5,-8.66]).LineTo([5,-8.66]).End(true).Face(); let distancer = Difference(Extrude(hex,[0,0,20]), [Cylinder(5,40,true)]);"
+}
