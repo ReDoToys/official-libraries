@@ -1,4 +1,5 @@
 {
   "label": "Box",
-  "code": "Box(1,1,1);"
+  "type" : "PARAMETRIC"
+  "codeEditable": false
 }

@@ -1,4 +1,5 @@
 {
   "label": "Cylinder",
-  "code": "Cylinder(1,1);"
+  "type" : "PARAMETRIC"
+  "codeEditable": false
 }
