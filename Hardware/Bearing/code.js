@@ -4,6 +4,7 @@ let innerRadius = 0.9;
 let sphereRadius = width / 2;
 let sphereSpacing = 45;
 
+Begin();
 let rectOuter = new Sketch([outerRadius, -width / 2])
   .LineTo([outerRadius + 0.3, -width / 2])
   .LineTo([outerRadius + 0.3, width / 2])

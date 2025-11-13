@@ -1,6 +1,7 @@
 let h = { name: 'Height', type: 'FLOAT', value: 3, constraint: 'NONZERO', unit: 'cm' };
 h = 3;
 
+Begin();
 let hexShape = new Sketch([1 * 0.7, 0])
   .LineTo([0.5 * 0.7, 0.866 * 0.7])
   .LineTo([-0.5 * 0.7, 0.866 * 0.7])
