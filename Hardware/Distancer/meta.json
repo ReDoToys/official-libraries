@@ -1,6 +1,6 @@
 {
   "label": "Distancer",
   "type" : "PARAMETRIC",
-  "codeVisible": false,
+  "codeVisible": true,
   "codeEditable": false
 }
