@@ -2,5 +2,5 @@
   "label": "Sphere",
   "type" : "PARAMETRIC",
   "codeVisible": true,
-  "codeEditable": true,
+  "codeEditable": true
 }

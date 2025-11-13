@@ -2,5 +2,5 @@
   "label": "Cylinder",
   "type" : "PARAMETRIC",
   "codeVisible": true,
-  "codeEditable": true,
+  "codeEditable": true
 }
