@@ -6,4 +6,4 @@ rTop = 0.5;
 h = 2;
 
 Begin();
-Sphere(rBase,rTop, h);
+Cone(rBase,rTop, h);

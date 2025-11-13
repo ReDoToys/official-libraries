@@ -1,6 +1,6 @@
 {
   "label": "Cone",
   "type" : "PARAMETRIC",
-  "codeVisible": false,
+  "codeVisible": true,
   "codeEditable": false
 }
