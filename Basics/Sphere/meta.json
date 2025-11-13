@@ -1,4 +1,6 @@
 {
   "label": "Sphere",
-  "code": "Sphere(1);"
+  "type" : "PARAMETRIC",
+  "codeVisible": true,
+  "codeEditable": true,
 }

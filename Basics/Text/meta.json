@@ -1,4 +1,6 @@
-  {
-    "label": "Text",
-    "code": "Text3D('Text', 4, 0.10, 'Roboto');"
-  }
+{
+  "label": "Text",
+  "type" : "PARAMETRIC",
+  "codeVisible": true,
+  "codeEditable": true,
+}

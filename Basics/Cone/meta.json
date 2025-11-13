@@ -1,4 +1,6 @@
 {
   "label": "Cone",
-  "code": "Cone(1,0.5,2);"
+  "type" : "PARAMETRIC",
+  "codeVisible": true,
+  "codeEditable": true,
 }
