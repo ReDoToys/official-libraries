@@ -3,11 +3,10 @@ let h = { name: 'Height', type: 'FLOAT', value: 30, constraint: 'NONZERO', unit:
 w = 20;
 h = 30;
 
-Begin();
-let face = new Sketch([0,0]).Fillet(2).
-               LineTo([w,0]).Fillet(2).
-               LineTo([w,h]).Fillet(2).
-			   LineTo([0,h]).Fillet(2).
+let face = new Sketch([0,0]).Fillet(1).
+               LineTo([w,0]).Fillet(1).
+               LineTo([w,h]).Fillet(1).
+			   LineTo([0,h]).Fillet(1).
                End(true).Face();
 			   
-Extrude(face, [0, 1.7, 0]),
+Extrude(face, [0 , 0, 1.8])
