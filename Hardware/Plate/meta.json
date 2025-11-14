@@ -1,0 +1,7 @@
+{
+  "label": "Box",
+  "type" : "PARAMETRIC",
+  "codeVisible": true,
+  "codeEditable": false,
+  "materialName": "Wood"
+}
