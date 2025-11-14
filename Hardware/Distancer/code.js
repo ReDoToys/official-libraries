@@ -2,15 +2,15 @@ let h = { name: 'Height', type: 'FLOAT', value: 3, constraint: 'NONZERO', unit: 
 h = 3;
 
 Begin();
-let hexShape = new Sketch([1 * 0.35, 0])
+const hexShape = new Sketch([0.35, 0])
   .LineTo([0.5 * 0.35, 0.866 * 0.35])
   .LineTo([-0.5 * 0.35, 0.866 * 0.35])
-  .LineTo([-1 * 0.35, 0])
+  .LineTo([-0.35, 0])
   .LineTo([-0.5 * 0.35, -0.866 * 0.35])
   .LineTo([0.5 * 0.35, -0.866 * 0.35])
   .End(true)
   .Face();
 
-let hexPrism = Extrude(hexShape, [0,0,h]);
-let cylinder = Cylinder(0.3, h, false);
-let distancer = Difference(hexPrism, [cylinder]);
+const hexPrism = Extrude(hexShape, [0,0,h]);
+const cylinder = Cylinder(0.3, h, false);
+const distancer = Difference(hexPrism, [cylinder]);
