@@ -2,9 +2,9 @@
   "label": "Feather Board",
   "type": "MESH",
   "variations": {
-    "3010 Adafruit Feather M0 WiFi": "models/3010.3mf",
-    "2995 Feather M0 Bluefruit LE": "models/2995.3mf",
-    "2821 Adafruit ESP8266 Feather": "models/2821.3mf",
-    "2795 Feather 32u4 Adalogger": "models/2795.3mf"
+    "3010 Adafruit Feather M0 WiFi": "3010.3mf",
+    "2995 Feather M0 Bluefruit LE": "2995.3mf",
+    "2821 Adafruit ESP8266 Feather": "2821.3mf",
+    "2795 Feather 32u4 Adalogger": "2795.3mf"
   }
 }
