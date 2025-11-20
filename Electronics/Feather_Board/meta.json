@@ -1,6 +1,8 @@
 {
   "label": "Feather Board",
   "type": "MESH",
+  "material": "Original",
+  "isMaterialChangable": false,
   "variations": {
     "3010 Adafruit Feather M0 WiFi": "3010.3mf",
     "2995 Feather M0 Bluefruit LE": "2995.3mf",
