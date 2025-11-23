@@ -1,0 +1,37 @@
+const p = []
+    p[0] = { name: 'Width', type: 'FLOAT', value: 0.8, constraint: 'NONZERO', unit: 'cm' };
+    p[1] = { name: 'Outer Radius', type: 'FLOAT', value: 1.5, constraint: 'NONZERO', unit: 'cm' };
+    p[2] = { name: 'Inner Radius', type: 'FLOAT', value: 0.9, constraint: 'NONZERO', unit: 'cm' };
+    p[3] = { name: 'Sphere Spacing', type: 'FLOAT', value: 45, constraint: 'NONZERO', unit: 'cm' };
+
+const v = []
+    v[0] = 0.8
+    v[1] = 1.5
+    v[2] = 0.9
+    v[3] = 45
+
+const s = []
+    s[0] = Sketch([v[1], -v[0] / 2]).LineTo([v[1] + 0.3, -v[0] / 2]).LineTo([v[1] + 0.3, v[0] / 2]).LineTo([v[1], v[0] / 2]).End(true).Face()
+    s[1] = Sketch([v[2], -v[0] / 2]).LineTo([v[2] - 0.3, -v[0] / 2]).LineTo([v[2] - 0.3, v[0] / 2]).LineTo([v[2], v[0] / 2]).End(true).Face()
+    s[2] = Union([s[0], s[1]], false)
+    s[3] = Revolve(s[2], 360, [0, 1, 0])
+
+    s[4] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[5] = Rotate([0, 1, 0], v[3], s[4])
+    s[6] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[7] = Rotate([0, 1, 0], v[3] * 2, s[6])
+    s[8] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[9] = Rotate([0, 1, 0], v[3] * 3, s[8])
+    s[10] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[11] = Rotate([0, 1, 0], v[3] * 4, s[10])
+    s[12] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[13] = Rotate([0, 1, 0], v[3] * 5, s[12])
+    s[14] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[15] = Rotate([0, 1, 0], v[3] * 6, s[14])
+    s[16] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[17] = Rotate([0, 1, 0], v[3] * 7, s[16])
+
+    s[18] = Union([s[3], s[5], s[7], s[9], s[11], s[13], s[15], s[17]], false)
+
+const m = []
+    m[0] = { shape: 18, label: "RingWithSpheres", material: "Generic" }
