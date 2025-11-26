@@ -1,0 +1,15 @@
+const p = []
+	p[0] = { name: 'Width',  type: 'FLOAT', value: 2, constraint: 'NONZERO', unit: 'cm' };
+	p[1] = { name: 'Height', type: 'FLOAT', value: 3, constraint: 'NONZERO', unit: 'cm' };
+	p[2] = { name: 'Length', type: 'FLOAT', value: 4, constraint: 'NONZERO', unit: 'cm' };
+
+const v = []
+	v[0] = 2.0;
+	v[1] = 3.0;
+	v[2] = 4.0;
+
+const s = []
+    s[0] = Box(v[0],v[1], v[2]);
+
+const m = []
+    m[0] = { shape: 0, label: "Box", material: "Default" }
