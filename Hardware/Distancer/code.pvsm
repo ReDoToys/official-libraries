@@ -1,5 +1,5 @@
 const p = []
-    p[0] = { name: 'Height', type: 'FLOAT', value: 3, constraint: 'NONZERO', unit: 'cm' };
+    p[0] = { name: 'Height', type: 'FLOAT', value: 2.0, constraint: 'NONZERO', unit: 'cm' };
 
 const v = []
 	v[0] = 2.0;
@@ -16,7 +16,7 @@ const s = []
 
     s[1] = Extrude(s[0], [0,0,v[0]]);
     s[2] = Cylinder(0.13, v[0], false);
-    s[3] = Difference(s[1], [s[2]]);
+    s[3] = Subtract(s[1], [s[2]]);
 
 const m = []
     m[0] = { shape: 3, label: "Distancer", material: "Default" }
