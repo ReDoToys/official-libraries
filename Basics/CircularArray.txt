@@ -1,0 +1,11 @@
+const p = []
+
+const v = []
+
+const s = []
+    s[0] = Box(1.0,5.0, 4.0);
+	s[1] = Box(2.0,2.0, 2.0);
+    s[2] = ArrayCircular([s[0],s[1]],8, [0,10,0], [0,0,1],360, true)
+
+const m = []
+    m[0] = { shape: 2, label: "Box Array", material: "Default" }

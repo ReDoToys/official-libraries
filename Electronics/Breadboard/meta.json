@@ -1,0 +1,10 @@
+{
+  "label": "Breadboard",
+  "type": "MESH",
+  "material": "Original",
+  "isMaterialChangable": false,
+  "variations": {
+    "Long": "long.3mf",
+	"Small": "small.3mf",
+  }
+}

@@ -34,4 +34,4 @@ const s = []
     s[18] = Union([s[3], s[5], s[7], s[9], s[11], s[13], s[15], s[17]], false)
 
 const m = []
-    m[0] = { shape: 18, label: "RingWithSpheres", material: "Generic" }
+    m[0] = { shape: 18, label: "Bearing", material: "Generic" }
