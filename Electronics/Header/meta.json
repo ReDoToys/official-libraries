@@ -1,0 +1,10 @@
+{
+  "label": "Header (2.54mm)",
+  "type": "MESH",
+  "material": "Original",
+  "isMaterialChangable": false,
+  "variations": {
+    "Female": "female.3mf",
+    "Male": "male.3mf"
+  }
+}
