@@ -11,8 +11,8 @@ const v = []
     v[3] = 45
 
 const s = []
-    s[0] = Sketch([v[1], -v[0] / 2]).LineTo([v[1] + 0.3, -v[0] / 2]).LineTo([v[1] + 0.3, v[0] / 2]).LineTo([v[1], v[0] / 2]).End(true).Face()
-    s[1] = Sketch([v[2], -v[0] / 2]).LineTo([v[2] - 0.3, -v[0] / 2]).LineTo([v[2] - 0.3, v[0] / 2]).LineTo([v[2], v[0] / 2]).End(true).Face()
+    s[0] = new Sketch([v[1], -v[0] / 2]).LineTo([v[1] + 0.3, -v[0] / 2]).LineTo([v[1] + 0.3, v[0] / 2]).LineTo([v[1], v[0] / 2]).End(true).Face()
+    s[1] = new Sketch([v[2], -v[0] / 2]).LineTo([v[2] - 0.3, -v[0] / 2]).LineTo([v[2] - 0.3, v[0] / 2]).LineTo([v[2], v[0] / 2]).End(true).Face()
     s[2] = Union([s[0], s[1]], false)
     s[3] = Revolve(s[2], 360, [0, 1, 0])
 
