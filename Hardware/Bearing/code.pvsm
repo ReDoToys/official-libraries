@@ -15,23 +15,10 @@ const s = []
     s[1] = new Sketch([v[2], -v[0] / 2]).LineTo([v[2] - 0.3, -v[0] / 2]).LineTo([v[2] - 0.3, v[0] / 2]).LineTo([v[2], v[0] / 2]).End(true).Face()
     s[2] = Union([s[0], s[1]], false)
     s[3] = Revolve(s[2], 360, [0, 1, 0])
-
-    s[4] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[5] = Rotate([0, 1, 0], v[3], s[4])
-    s[6] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[7] = Rotate([0, 1, 0], v[3] * 2, s[6])
-    s[8] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[9] = Rotate([0, 1, 0], v[3] * 3, s[8])
-    s[10] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[11] = Rotate([0, 1, 0], v[3] * 4, s[10])
-    s[12] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[13] = Rotate([0, 1, 0], v[3] * 5, s[12])
-    s[14] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[15] = Rotate([0, 1, 0], v[3] * 6, s[14])
-    s[16] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-    s[17] = Rotate([0, 1, 0], v[3] * 7, s[16])
-
-    s[18] = Union([s[3], s[5], s[7], s[9], s[11], s[13], s[15], s[17]], false)
+	
+	s[4] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+	s[5] = ArrayCircular([s[4]],8, [0, 0, 0], [0,1,0], 360, true)
 
 const m = []
-    m[0] = { shape: 18, label: "Bearing", material: "Generic" }
+    m[0] = { shape: 3, label: "Rings", material: "Steel" }
+	m[1] = { shape: 5, label: "Balls", material: "Aluminum" }

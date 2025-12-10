@@ -19,4 +19,4 @@ const s = []
     s[3] = Subtract([s[1], s[2]]);
 
 const m = []
-    m[0] = { shape: 3, label: "Distancer", material: "Default" }
+    m[0] = { shape: 3, label: "Distancer", material: "Brass" }
