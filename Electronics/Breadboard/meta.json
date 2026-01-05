@@ -3,6 +3,7 @@
   "type": "MESH",
   "material": "Original",
   "isMaterialChangable": false,
+  "isScalable": false,
   "variations": {
     "Long": "long.3mf",
     "Small": "small.3mf"

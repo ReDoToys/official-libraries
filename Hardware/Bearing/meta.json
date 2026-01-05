@@ -3,5 +3,6 @@
   "type" : "PARAMETRIC",
   "codeVisible": true,
   "codeEditable": false,
-  "materialName": "Aluminum"
+  "materialName": "Aluminum",
+  "isScalable": false
 }

@@ -3,5 +3,6 @@
   "type" : "PARAMETRIC",
   "codeVisible": true,
   "codeEditable": false,
-  "materialName": "Brass"
+  "materialName": "Brass",
+  "isScalable": false
 }

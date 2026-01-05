@@ -3,6 +3,7 @@
   "type": "MESH",
   "material": "Original",
   "isMaterialChangable": false,
+  "isScalable": false,
   "variations": {
     "Female": "female.3mf",
     "Male": "male.3mf"

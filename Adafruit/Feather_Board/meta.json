@@ -3,7 +3,6 @@
   "type": "MESH",
   "material": "Original",
   "isMaterialChangable": false,
-  "translate": [0.0, -11.43, 0.0],
   "isScalable": false,
   "variations": {
     "3010 M0 WiFi": "3010.3mf",
