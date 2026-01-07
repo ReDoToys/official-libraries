@@ -16,9 +16,9 @@ const s = []
     s[2] = Union([s[0], s[1]], false)
     s[3] = Revolve(s[2], 360, [0, 1, 0])
 	
-	s[4] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
-	s[5] = ArrayCircular([s[4]],8, [0, 0, 0], [0,1,0], 360, true)
+    s[4] = Translate([(v[1] + v[2]) / 2, 0, 0], Sphere(v[0] / 2))
+    s[5] = ArrayCircular([s[4]],8, [0, 0, 0], [0,1,0], 360, true)
 
 const m = []
     m[0] = { shape: 3, label: "Rings", material: "Steel" }
-	m[1] = { shape: 5, label: "Balls", material: "Aluminum" }
+    m[1] = { shape: 5, label: "Balls", material: "Aluminum" }

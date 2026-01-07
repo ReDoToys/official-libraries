@@ -2,7 +2,7 @@ const p = []
     p[0] = { name: 'Height', type: 'FLOAT', value: 2.0, constraint: 'NONZERO', unit: 'cm' };
 
 const v = []
-	v[0] = 2.0;
+    v[0] = 2.0;
 
 const s = []
     s[0] = new Sketch([1 * 0.27, 0])
